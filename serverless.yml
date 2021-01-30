@@ -116,8 +116,8 @@ plugins:
   - serverless-plugin-split-stacks
 
 custom:
-  # pythonRequirements:
-  #   dockerizePip: false
+  pythonRequirements:
+    dockerizePip: false
   prune:
     automatic: true
     number: 3
