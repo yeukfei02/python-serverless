@@ -1,0 +1,23 @@
+{
+  "name": "python-serverless",
+  "version": "0.1.0",
+  "main": "app.js",
+  "license": "MIT",
+  "devDependencies": {
+    "git-cz": "^4.7.6",
+    "serverless-offline": "^6.8.0",
+    "serverless-plugin-split-stacks": "^1.10.0",
+    "serverless-prune-plugin": "^1.4.3",
+    "serverless-python-requirements": "^5.1.0",
+    "standard-version": "^9.1.0"
+  },
+  "scripts": {
+    "dev": "serverless offline start",
+    "deploy": "serverless deploy",
+    "package": "serverless package",
+    "dashboard": "serverless dashboard",
+    "remove": "serverless remove",
+    "commit": "git-cz",
+    "release": "standard-version"
+  }
+}
