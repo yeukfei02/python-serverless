@@ -113,7 +113,7 @@ plugins:
   - serverless-python-requirements
   - serverless-prune-plugin
   - serverless-offline
-  - serverless-plugin-split-stacks
+  # - serverless-plugin-split-stacks
 
 custom:
   pythonRequirements:
