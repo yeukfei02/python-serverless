@@ -8,14 +8,14 @@ useDotenv: true
 provider:
   name: aws
   runtime: python3.8
-  stage: dev
+  stage: prod
   region: ap-southeast-1
-  apiName: python-serverless-dev
+  apiName: python-serverless-prod
   tracing:
     apiGateway: true
     lambda: true
   environment:
-    PYTHON_ENV: development
+    PYTHON_ENV: production
     MY_AWS_ACCESS_KEY: ${param:MY_AWS_ACCESS_KEY}
     MY_AWS_SECRET_ACCESS_KEY: ${param:MY_AWS_SECRET_ACCESS_KEY}
     JWT_SECRET: ${param:JWT_SECRET}
@@ -28,7 +28,7 @@ provider:
         - "*"
   apiGateway:
     shouldStartNameWithService: true
-    description: python serverless dev
+    description: python serverless prod
   lambdaHashingVersion: 20201221
 
 functions:
