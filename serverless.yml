@@ -26,6 +26,17 @@ provider:
         - "xray:PutTelemetryRecords"
       Resource:
         - "*"
+    - Effect: Allow
+      Action:
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+        - dynamodb:DescribeTable
+      Resource:
+        - "*"
   apiGateway:
     shouldStartNameWithService: true
     description: python serverless dev
