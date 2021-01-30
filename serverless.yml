@@ -7,7 +7,7 @@ useDotenv: true
 
 provider:
   name: aws
-  runtime: python3.6
+  runtime: python3.8
   stage: prod
   region: ap-southeast-1
   apiName: python-serverless-prod
@@ -128,7 +128,7 @@ plugins:
 
 custom:
   pythonRequirements:
-    # dockerizePip: false
+    dockerizePip: true
     pythonBin: python3
   prune:
     automatic: true
