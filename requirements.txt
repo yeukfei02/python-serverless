@@ -1,3 +1,4 @@
 pynamodb==5.0.0
 bcrypt==3.2.0
 pyjwt==2.0.1
+cffi==1.14.4
