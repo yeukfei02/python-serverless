@@ -92,7 +92,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE0YTYzNTM3LTk2NzUtNDU2ZC04OTBhLTQ2OTc3YmYzMTdkNCIsImVtYWlsIjoidGVzdCJ9.pjKCYkMYC1Ws0h2pB9uxq47HQrAZl7CYkkc_MJ7TZRQ",
+									"value": "{{jwtToken}}",
 									"type": "string"
 								}
 							]
@@ -133,7 +133,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE0YTYzNTM3LTk2NzUtNDU2ZC04OTBhLTQ2OTc3YmYzMTdkNCIsImVtYWlsIjoidGVzdCJ9.pjKCYkMYC1Ws0h2pB9uxq47HQrAZl7CYkkc_MJ7TZRQ",
+									"value": "{{jwtToken}}",
 									"type": "string"
 								}
 							]
@@ -173,7 +173,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE0YTYzNTM3LTk2NzUtNDU2ZC04OTBhLTQ2OTc3YmYzMTdkNCIsImVtYWlsIjoidGVzdCJ9.pjKCYkMYC1Ws0h2pB9uxq47HQrAZl7CYkkc_MJ7TZRQ",
+									"value": "{{jwtToken}}",
 									"type": "string"
 								}
 							]
@@ -211,7 +211,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE0YTYzNTM3LTk2NzUtNDU2ZC04OTBhLTQ2OTc3YmYzMTdkNCIsImVtYWlsIjoidGVzdCJ9.pjKCYkMYC1Ws0h2pB9uxq47HQrAZl7CYkkc_MJ7TZRQ",
+									"value": "{{jwtToken}}",
 									"type": "string"
 								}
 							]
@@ -249,7 +249,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE0YTYzNTM3LTk2NzUtNDU2ZC04OTBhLTQ2OTc3YmYzMTdkNCIsImVtYWlsIjoidGVzdCJ9.pjKCYkMYC1Ws0h2pB9uxq47HQrAZl7CYkkc_MJ7TZRQ",
+									"value": "{{jwtToken}}",
 									"type": "string"
 								}
 							]
@@ -266,15 +266,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/dev/notes/fd2cc1f6-24dc-40e2-bb5e-633bfd68ae0b",
+							"raw": "{{rootUrl}}/notes/84c196b1-902a-49bd-b678-dd2567b86a00",
 							"host": [
-								"localhost"
+								"{{rootUrl}}"
 							],
-							"port": "3000",
 							"path": [
-								"dev",
 								"notes",
-								"fd2cc1f6-24dc-40e2-bb5e-633bfd68ae0b"
+								"84c196b1-902a-49bd-b678-dd2567b86a00"
 							]
 						},
 						"description": "/notes/{id}"
