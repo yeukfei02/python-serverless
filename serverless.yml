@@ -26,15 +26,15 @@ provider:
         - "xray:PutTelemetryRecords"
       Resource:
         - "*"
-    - Effect: Allow
+    - Effect: "Allow"
       Action:
-        - dynamodb:Query
-        - dynamodb:Scan
-        - dynamodb:GetItem
-        - dynamodb:PutItem
-        - dynamodb:UpdateItem
-        - dynamodb:DeleteItem
-        - dynamodb:DescribeTable
+        - "dynamodb:Query"
+        - "dynamodb:Scan"
+        - "dynamodb:GetItem"
+        - "dynamodb:PutItem"
+        - "dynamodb:UpdateItem"
+        - "dynamodb:DeleteItem"
+        - "dynamodb:DescribeTable"
       Resource:
         - "*"
   apiGateway:
