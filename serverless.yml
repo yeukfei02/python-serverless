@@ -7,7 +7,7 @@ useDotenv: true
 
 provider:
   name: aws
-  runtime: python3.8
+  runtime: python3.6
   stage: prod
   region: ap-southeast-1
   apiName: python-serverless-prod
