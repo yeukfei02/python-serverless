@@ -118,6 +118,7 @@ plugins:
 custom:
   pythonRequirements:
     dockerizePip: false
+    pythonBin: python3
   prune:
     automatic: true
     number: 3
