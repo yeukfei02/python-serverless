@@ -6,12 +6,13 @@ import os
 
 from model.User import UserModel
 
+
 def login(event, context):
     response = {}
 
     if event['body']:
         body = json.loads(event['body'])
-        
+
         email = body['email']
         password = body['password']
 
@@ -20,14 +21,15 @@ def login(event, context):
                 print('userFromDB = ', userFromDB)
                 if userFromDB:
                     userHashedPasswordFromDB = userFromDB.password
-                    isPasswordValid = bcrypt.checkpw(password.encode('utf-8'), userHashedPasswordFromDB.encode('utf-8'))
+                    isPasswordValid = bcrypt.checkpw(password.encode(
+                        'utf-8'), userHashedPasswordFromDB.encode('utf-8'))
                     if isPasswordValid:
                         token = jwt.encode(
                             {
-                                "id": str(uuid.uuid4()), 
+                                "id": str(uuid.uuid4()),
                                 "email": email
-                            }, 
-                            os.environ['JWT_SECRET'], 
+                            },
+                            os.environ['JWT_SECRET'],
                             algorithm="HS256"
                         )
 
@@ -50,14 +52,14 @@ def login(event, context):
                             "body": json.dumps(body)
                         }
                 else:
-                        body = {
-                            "message": "login error, no this user",
-                        }
+                    body = {
+                        "message": "login error, no this user",
+                    }
 
-                        response = {
-                            "statusCode": 400,
-                            "body": json.dumps(body)
-                        }
+                    response = {
+                        "statusCode": 400,
+                        "body": json.dumps(body)
+                    }
     else:
         body = {
             "message": "please enter email and password in request body",

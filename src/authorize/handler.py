@@ -1,22 +1,25 @@
 import jwt
 import os
 
+
 def authorize(event, context):
-    token = event['authorizationToken'].replace('Bearer ', '');
+    token = event['authorizationToken'].replace('Bearer ', '')
     # methodArn = event.methodArn;
 
     policyDocument = {}
     try:
-        decoded = jwt.decode(token, os.environ['JWT_SECRET'], algorithms=["HS256"])
+        decoded = jwt.decode(
+            token, os.environ['JWT_SECRET'], algorithms=["HS256"])
         effect = 'Deny'
         if decoded:
             effect = 'Allow'
 
-        policyDocument = generatePolicyDocument(decoded['id'], effect);
+        policyDocument = generatePolicyDocument(decoded['id'], effect)
     except:
         print('error')
 
     return policyDocument
+
 
 def generatePolicyDocument(principalId, effect):
     policyDocument = {}
@@ -35,5 +38,5 @@ def generatePolicyDocument(principalId, effect):
                 ],
             },
         }
-    
+
     return policyDocument

@@ -3,6 +3,7 @@ import uuid
 
 from model.Notes import NotesModel
 
+
 def updateNoteById(event, context):
     response = {}
 
@@ -12,7 +13,7 @@ def updateNoteById(event, context):
         body = json.loads(event['body'])
 
         content = body['content']
-        
+
         try:
             noteFromDB = NotesModel.get(id)
             noteFromDB.update(
@@ -39,7 +40,6 @@ def updateNoteById(event, context):
             }
 
             return response
-        
 
         response = {
             "statusCode": 200,

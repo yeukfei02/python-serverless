@@ -2,6 +2,7 @@ from pynamodb.attributes import UnicodeAttribute, UTCDateTimeAttribute
 from pynamodb.models import Model
 from datetime import datetime
 
+
 class NotesModel(Model):
     class Meta:
         table_name = "PythonServerlessNotes"
@@ -19,6 +20,7 @@ class NotesModel(Model):
     def __iter__(self):
         for name, attr in self._get_attributes().items():
             yield name, attr.serialize(getattr(self, name))
+
 
 if not NotesModel.exists():
     NotesModel.create_table(read_capacity_units=1, write_capacity_units=1)
