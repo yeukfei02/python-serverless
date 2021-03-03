@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/yeukfei02/python-serverless/compare/v0.1.2...v0.1.3) (2021-03-03)
+
+
+### Bug Fixes
+
+* 🐛 lint and format code ([3b3ec3c](https://github.com/yeukfei02/python-serverless/commit/3b3ec3c62a0422d4f28446d458e668dd0c17d419))
+
 ### [0.1.2](https://github.com/yeukfei02/python-serverless/compare/v0.1.1...v0.1.2) (2021-01-30)
 
 
