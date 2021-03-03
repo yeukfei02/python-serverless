@@ -3,6 +3,7 @@ import uuid
 
 from model.Notes import NotesModel
 
+
 def deleteNoteById(event, context):
     response = {}
 

@@ -3,12 +3,13 @@ import uuid
 
 from model.Notes import NotesModel
 
+
 def createNotes(event, context):
     response = {}
 
     if event['body']:
         body = json.loads(event['body'])
-        
+
         content = body['content']
 
         uuidStr = str(uuid.uuid4())

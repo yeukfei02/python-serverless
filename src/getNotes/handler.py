@@ -3,11 +3,12 @@ import uuid
 
 from model.Notes import NotesModel
 
+
 def getNotes(event, context):
     response = {}
 
     notesListFromDB = NotesModel.scan()
-    
+
     notesList = []
     if notesListFromDB:
         for notes in notesListFromDB:
