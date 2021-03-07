@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/yeukfei02/python-serverless/compare/v0.1.3...v0.1.4) (2021-03-07)
+
+
+### Features
+
+* 🎸 add logger ([aabb85e](https://github.com/yeukfei02/python-serverless/commit/aabb85e84c7b2a3d6e96695933663adc3e29e576))
+
 ### [0.1.3](https://github.com/yeukfei02/python-serverless/compare/v0.1.2...v0.1.3) (2021-03-03)
 
 
