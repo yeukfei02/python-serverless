@@ -1,5 +1,6 @@
 import jwt
 import os
+import logging as logger
 
 
 def authorize(event, context):
@@ -16,7 +17,7 @@ def authorize(event, context):
 
         policyDocument = generatePolicyDocument(decoded['id'], effect)
     except:
-        print('error')
+        logger.info('error')
 
     return policyDocument
 

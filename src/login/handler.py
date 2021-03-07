@@ -3,6 +3,7 @@ import bcrypt
 import jwt
 import uuid
 import os
+import logging as logger
 
 from model.User import UserModel
 
@@ -18,7 +19,7 @@ def login(event, context):
 
         if email and password:
             for userFromDB in UserModel.scan(UserModel.email == email):
-                print('userFromDB = ', userFromDB)
+                logger.info('userFromDB = {0}', userFromDB)
                 if userFromDB:
                     userHashedPasswordFromDB = userFromDB.password
                     isPasswordValid = bcrypt.checkpw(password.encode(
