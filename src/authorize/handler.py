@@ -9,8 +9,8 @@ def authorize(event, context):
 
     policyDocument = {}
     try:
-        decoded = jwt.decode(
-            token, os.environ['JWT_SECRET'], algorithms=["HS256"])
+        decoded = jwt.decode(token, os.getenv(
+            'JWT_SECRET'), algorithms=["HS256"])
         effect = 'Deny'
         if decoded:
             effect = 'Allow'
