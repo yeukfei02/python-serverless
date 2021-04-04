@@ -1,19 +1,19 @@
 # python serverless
 
-documentation: https://documenter.getpostman.com/view/3827865/TW6xoofc
+documentation: <https://documenter.getpostman.com/view/3827865/TW6xoofc>
 
-api url: https://bd2mt0au0j.execute-api.ap-southeast-1.amazonaws.com/prod/
+api url: <https://bd2mt0au0j.execute-api.ap-southeast-1.amazonaws.com/prod/>
 
-## Requirement:
+## Requirement
 
 - install python3
 - install yarn
 - install node (v12+)
 - install serverless
 
-## Testing and run:
+## Testing and run
 
-```
+```zsh
 // install node dependencies
 $ yarn
 
