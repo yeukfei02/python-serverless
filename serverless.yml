@@ -128,7 +128,7 @@ plugins:
 
 custom:
   pythonRequirements:
-    dockerizePip: true
+    dockerizePip: 'non-linux'
     pythonBin: python3
   prune:
     automatic: true
