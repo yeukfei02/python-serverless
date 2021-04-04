@@ -30,7 +30,7 @@ def login(event, context):
                                 "id": str(uuid.uuid4()),
                                 "email": email
                             },
-                            os.environ['JWT_SECRET'],
+                            os.getenv('JWT_SECRET'),
                             algorithm="HS256"
                         )
 
