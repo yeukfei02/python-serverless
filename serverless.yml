@@ -19,25 +19,27 @@ provider:
     MY_AWS_ACCESS_KEY: ${param:MY_AWS_ACCESS_KEY}
     MY_AWS_SECRET_ACCESS_KEY: ${param:MY_AWS_SECRET_ACCESS_KEY}
     JWT_SECRET: ${param:JWT_SECRET}
-  iamRoleStatements:
-    - Effect: "Allow"
-      Action:
-        - "xray:PutTraceSegments"
-        - "xray:PutTelemetryRecords"
-      Resource:
-        - "*"
-    - Effect: "Allow"
-      Action:
-        - "dynamodb:Query"
-        - "dynamodb:Scan"
-        - "dynamodb:GetItem"
-        - "dynamodb:PutItem"
-        - "dynamodb:UpdateItem"
-        - "dynamodb:DeleteItem"
-        - "dynamodb:DescribeTable"
-      Resource:
-        - "*"
-  apiGateway:
+  iam:
+    role:
+      statements:
+        - Effect: "Allow"
+          Action:
+            - "xray:PutTraceSegments"
+            - "xray:PutTelemetryRecords"
+          Resource:
+            - "*"
+        - Effect: "Allow"
+          Action:
+            - "dynamodb:Query"
+            - "dynamodb:Scan"
+            - "dynamodb:GetItem"
+            - "dynamodb:PutItem"
+            - "dynamodb:UpdateItem"
+            - "dynamodb:DeleteItem"
+            - "dynamodb:DescribeTable"
+          Resource:
+            - "*"
+      apiGateway:
     shouldStartNameWithService: true
     description: python serverless prod
   lambdaHashingVersion: 20201221
