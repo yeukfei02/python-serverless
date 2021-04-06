@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/yeukfei02/python-serverless/compare/v0.1.4...v0.1.5) (2021-04-06)
+
+
+### Bug Fixes
+
+* 🐛 change to os.getenv ([d3527d6](https://github.com/yeukfei02/python-serverless/commit/d3527d6fb5d97aeedbae569e0189372b59eb7935))
+* 🐛 fix dockerizePip ([9dddd4d](https://github.com/yeukfei02/python-serverless/commit/9dddd4d6824341671c9ed0ef1ea2cd421cdb6272))
+* 🐛 fix sls.yml ([213b94a](https://github.com/yeukfei02/python-serverless/commit/213b94a3f851fbc0966793bd756ed830e77eda8b))
+* 🐛 fix sls.yml, readme.md ([582aac5](https://github.com/yeukfei02/python-serverless/commit/582aac50207aa0f05630d3f932fbd25d698546ce))
+* 🐛 fix stage in deploy.yml ([8d4fdfb](https://github.com/yeukfei02/python-serverless/commit/8d4fdfb069277fe9d42c87788ba2b0a1a801fa49))
+* 🐛 update serverless-plugin-split-stacks lib ([8c0bf3e](https://github.com/yeukfei02/python-serverless/commit/8c0bf3e25a330cd3d3d445646385b6432d9ed331))
+* 🐛 update serverless-python-requirements lib ([da8d685](https://github.com/yeukfei02/python-serverless/commit/da8d685d5987fb0c368510d419c1c92e7bc911d1))
+* 🐛 update sls lib ([a689282](https://github.com/yeukfei02/python-serverless/commit/a68928291769a182003b32efb98735ea5b0f9f69))
+* 🐛 use hashlib ([cb313cf](https://github.com/yeukfei02/python-serverless/commit/cb313cff08b0b97fd508bc29339688fa36be43e7))
+
 ### [0.1.4](https://github.com/yeukfei02/python-serverless/compare/v0.1.3...v0.1.4) (2021-03-07)
 
 
