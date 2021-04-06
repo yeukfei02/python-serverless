@@ -1,7 +1,6 @@
 import json
 import uuid
-import bcrypt
-
+import hashlib
 from model.User import UserModel
 
 
@@ -16,12 +15,11 @@ def signup(event, context):
 
         uuidStr = str(uuid.uuid4())
 
-        salt = bcrypt.gensalt()
-        hashedPassword = bcrypt.hashpw(password.encode('utf-8'), salt)
-        hashedPasswordDecoded = hashedPassword.decode('utf-8')
+        password_encode = password.encode('utf-8')
+        hashedPassword = hashlib.sha256(password_encode).hexdigest()
 
         userModel = UserModel(id=uuidStr, email=email,
-                              password=hashedPasswordDecoded)
+                              password=hashedPassword)
         userModel.save()
 
         if email and password:
