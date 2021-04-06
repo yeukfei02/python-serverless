@@ -39,7 +39,7 @@ provider:
             - "dynamodb:DescribeTable"
           Resource:
             - "*"
-      apiGateway:
+  apiGateway:
     shouldStartNameWithService: true
     description: python serverless dev
   lambdaHashingVersion: 20201221
