@@ -1,5 +1,5 @@
 import json
-import bcrypt
+import hashlib
 import jwt
 import uuid
 import os
@@ -22,9 +22,12 @@ def login(event, context):
                 logger.info('userFromDB = {0}', userFromDB)
                 if userFromDB:
                     userHashedPasswordFromDB = userFromDB.password
-                    isPasswordValid = bcrypt.checkpw(password.encode(
-                        'utf-8'), userHashedPasswordFromDB.encode('utf-8'))
-                    if isPasswordValid:
+
+                    password_encode = password.encode('utf-8')
+                    hashedPassword = hashlib.sha256(
+                        password_encode).hexdigest()
+
+                    if hashedPassword == userHashedPasswordFromDB:
                         token = jwt.encode(
                             {
                                 "id": str(uuid.uuid4()),
