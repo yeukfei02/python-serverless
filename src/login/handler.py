@@ -3,7 +3,6 @@ import hashlib
 import jwt
 import uuid
 import os
-import logging as logger
 
 from model.User import UserModel
 
@@ -19,7 +18,7 @@ def login(event, context):
 
         if email and password:
             for userFromDB in UserModel.scan(UserModel.email == email):
-                logger.info('userFromDB = {0}', userFromDB)
+                print('userFromDB = {0}', userFromDB)
                 if userFromDB:
                     userHashedPasswordFromDB = userFromDB.password
 
