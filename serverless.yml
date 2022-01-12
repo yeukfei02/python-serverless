@@ -43,6 +43,8 @@ provider:
     shouldStartNameWithService: true
     description: python serverless prod
   lambdaHashingVersion: 20201221
+  # architecture: arm64
+  timeout: 30
 
 functions:
   main:
