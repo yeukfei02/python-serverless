@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/yeukfei02/python-serverless/compare/v0.1.7...v0.1.8) (2022-01-31)
+
+
+### Bug Fixes
+
+* 🐛 update sls lib ([b18252d](https://github.com/yeukfei02/python-serverless/commit/b18252d9e3dbeff7fa51710ec4adf220bcd8f123))
+
 ### [0.1.7](https://github.com/yeukfei02/python-serverless/compare/v0.1.6...v0.1.7) (2022-01-12)
 
 
