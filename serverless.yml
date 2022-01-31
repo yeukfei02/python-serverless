@@ -126,14 +126,9 @@ functions:
 
 plugins:
   - serverless-python-requirements
-  - serverless-prune-plugin
   - serverless-offline
-  # - serverless-plugin-split-stacks
 
 custom:
   pythonRequirements:
     dockerizePip: true
     pythonBin: python3
-  prune:
-    automatic: true
-    number: 3
