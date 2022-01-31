@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/yeukfei02/python-serverless/compare/v0.1.6...v0.1.7) (2022-01-12)
+
+
+### Features
+
+* 🎸 update sls lib and temp add arm64 arch ([b1794c0](https://github.com/yeukfei02/python-serverless/commit/b1794c0ab1659aee0dd080bbc68262e982254b5a))
+
+
+### Bug Fixes
+
+* 🐛 remove not used import ([81b82bd](https://github.com/yeukfei02/python-serverless/commit/81b82bdfdfef7346c176e79165f0593be5002854))
+* 🐛 use print instead of logger.info ([6807bd4](https://github.com/yeukfei02/python-serverless/commit/6807bd46136377c5f478dfd2a8be66bf3a86bb08))
+
 ### [0.1.6](https://github.com/yeukfei02/python-serverless/compare/v0.1.5...v0.1.6) (2021-07-31)
 
 
