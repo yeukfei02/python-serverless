@@ -2,7 +2,7 @@ org: yeukfei05
 app: python-serverless
 service: python-serverless
 
-frameworkVersion: "3"
+frameworkVersion: "2"
 useDotenv: true
 
 provider:
