@@ -6,9 +6,9 @@ api url: <https://lh0hgo3pqg.execute-api.ap-southeast-1.amazonaws.com/prod/>
 
 ## Requirement
 
-- install python3
+- install python (v3.8)
 - install yarn
-- install node (v12+)
+- install node (v14+)
 - install serverless
 
 ## Testing and run
